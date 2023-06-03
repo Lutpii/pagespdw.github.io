@@ -1,0 +1,280 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.nav-logo {
+  width: 180px;
+  margin-left: -300px;
+}
+
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.nav-tombol {
+  background-color: #ffffff;
+}
+
+.header {
+  padding: 6px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Jumbotron */
+.jumbotron {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+  height: 699px;
+  background-position: center;
+  position: relative;
+  text-align: center;
+}
+
+.jumbotron .container {
+  z-index: 1;
+  position: relative;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.jumbotron .display-4 {
+  color: #ffffff;
+  text-align: center;
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: 52px;
+}
+
+.jumbotron .display-4 span {
+  font-weight: bold;
+}
+
+.jumbotron .tombol {
+  margin-top: 20px;
+}
+
+/* Info Panel */
+.info-panel {
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  margin-top: -130px;
+  background-color: #ffffff;
+  padding-top: 53px;
+  padding-bottom: 42px;
+}
+
+.info-panel img {
+  margin-right: 38px;
+  margin-bottom: 20px;
+}
+
+.info-panel h4 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.info-panel p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #acacac;
+}
+
+.info-logo-fast {
+  width: 89px;
+  height: 71px;
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.info-logo-money {
+  width: 89px;
+  height: 89px;
+  margin-left: 30px;
+}
+
+.info-text {
+  margin-right: 30px;
+}
+
+/* Workspace */
+.workspace {
+  margin-top: 148px;
+  text-align: center;
+}
+
+.workspace img {
+  border-radius: 25px;
+}
+
+.workspace h3 {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  font-weight: 300;
+}
+
+.workspace h3 span {
+  font-weight: bold;
+}
+
+.workspace p {
+  font-size: 22px;
+  font-weight: 200;
+  color: #acacac;
+}
+
+.workspace .tombol {
+  color: #ffffff;
+}
+
+/* Testimonial */
+.testimonial {
+  margin-top: 100px;
+}
+
+.testimonial figure img {
+  width: 90px;
+  height: 90px;
+  margin-top: 20px;
+  margin-left: 18px;
+}
+
+.testimonial figure h6 {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+}
+
+.testimonial figure p {
+  font-size: 12px;
+  color: #acacac;
+}
+
+.testimonial figcaption {
+  text-align: center;
+}
+
+.testimonial h5 {
+  text-align: center;
+  font-weight: 200;
+  font-style: italic;
+  font-size: 24px;
+  color: #acacac;
+}
+
+/* Feedback */
+.feedback {
+  color: #ffffff;
+}
+
+.feedback .form-group {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.feedback button {
+  margin-bottom: 15px;
+}
+
+.feedback h2 {
+  font-size: 24px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.feedback h3 {
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.feedback iframe {
+  border-radius: 30px;
+}
+
+/* Footer */
+.footer {
+  padding-top: 20px;
+}
+
+.footer h1 {
+  font-size: 14px;
+  color: #acacac;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Utilities */
+.tombol {
+  text-transform: uppercase;
+  border-radius: 40px;
+  color: #000000;
+}
+
+/* DESKTOP */
+@media (min-width: 992px) {
+  .nav-link {
+    color: white !important;
+  }
+
+  .nav-link:hover::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #ffffff;
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+  }
+
+  .jumbotron {
+    margin-top: -75px;
+  }
+
+  .jumbotron .display-4 {
+    margin-top: 114px;
+  }
+
+  .info-panel p {
+    margin-left: 156.8px;
+  }
+
+  .workspace {
+    text-align: left;
+  }
+
+  .testimonial h5 {
+    font-size: 32px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 3px solid #ffffff;
+  background-color: #343a40;
+}
